@@ -26,13 +26,13 @@ const getTotalIsles = function (grid) {
       for (let col = 0; col < cols; col++) {
           
           if (grid[row][col] === 'L') {
-              islandCount++;  
-              markIsland(row, col);  
+              islandCount++;  // Increment the island count
+              markIsland(row, col);  // Mark the entire island as visited
           }
       }
   }
 
-  return islandCount;  
+  return islandCount;  // Return the total number of islands found
 };
 
 module.exports = getTotalIsles;

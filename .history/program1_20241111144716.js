@@ -32,7 +32,7 @@ const getTotalIsles = function (grid) {
       }
   }
 
-  return islandCount;  
+  return islandCount;  // Return the total number of islands found
 };
 
 module.exports = getTotalIsles;
